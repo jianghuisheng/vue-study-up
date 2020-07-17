@@ -1,0 +1,23 @@
+#vue-app #bag {
+  width: 200px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(img/bag.png) center no-repeat;
+  background-size: 80%;
+}
+#vue-app #bag.burst {
+  background: url('img/bag-burst.png') center / 80% no-repeat;
+}
+#vue-app #bag-healt {
+  width: 200px;
+  border: 2px solid #000;
+  margin: 0 auto 20px auto;
+}
+#vue-app #bag-healt div {
+  height: 20px;
+  background: crimson;
+}
+#vue-app #controls {
+  width: 120px;
+  margin: 0 auto;
+}

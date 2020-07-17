@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue CDN</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>Events</h1>
+
+        <label>姓名</label>
+        <input v-on:keydown.enter="logName"></input>
+
+        <label>年龄</label>
+        <input v-on:keyup="logAge"></input>
+        <input v-on:keyup.alt.enter="logAge"></input>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

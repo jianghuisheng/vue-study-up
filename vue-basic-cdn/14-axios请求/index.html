@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorials</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.js"></script>
+</head>
+
+<body>
+    <h1>axios请求</h1>
+    <div id="vue-app">
+        <form action="" @submit.prevent="onSubmit">
+            <input type="text" v-model="todo.title">
+            <input type="checkbox" v-model="todo.completed">
+            <input type="submit" value="提交">
+        </form>
+        <ul>
+            <li v-for="todo in todos">
+                <h1>{{todo.title}}</h1>
+                <p>{{todo.completed}}</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue CDN</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>computed 计算属性</h1>
+        <button @click="a++">Add to A</button>
+        <button @click="b++">Add to B</button>
+        <p>A -- {{a}}</p>
+        <p>B -- {{b}}</p>
+
+        <!-- methods -->
+        <!-- <p>Age + A = {{addToA()}}</p>
+        <p>Age + B = {{addToB()}}</p> -->
+
+        <!-- computed 是个属性值有返回值所以不能加括号，多用于搜索，样式替换等 -->
+        <p>Age + A = {{addToA}}</p>
+        <p>Age + B = {{addToB}}</p>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue CDN</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>v-for循环</h1>
+        <!-- <ul>
+            <li>{{charactes[0]}}</li>
+            <li>{{charactes[1]}}</li>
+            <li>{{charactes[2]}}</li>
+            <li>{{charactes[3]}}</li>
+        </ul> -->
+
+        <!-- <ul>
+            <li v-for="mrCharactes in charactes">
+                {{mrCharactes}}
+            </li>
+        </ul> -->
+
+        <!-- <ul>
+            <li v-for="(user,index) in users"  :key="user.age">
+                {{user}}
+                {{index}}·{{user.name}}·{{user.age}}
+            </li>
+        </ul> -->
+
+        <!-- <template v-for="(user,index) in users">
+            <h3>{{index}} - {{user.name}}</h3>
+            <p>age - {{user.age}}</p>
+        </template> -->
+
+        <!-- 遍历对象 -->
+        <template v-for="(user,index) in users">
+            <div v-for="(val,key) in user">
+                <p>{{key}} - {{val}}</p>
+            </div>
+        </template>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

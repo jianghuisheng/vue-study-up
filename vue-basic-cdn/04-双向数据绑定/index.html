@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue CDN</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>双向数据绑定 input / select / textarea</h1>
+
+        <label>姓名</label>
+        <input v-model.lazy="name" @click="logName" value="name"></input>
+        <span>{{name}}</span>
+
+
+        <br>
+        <label>年龄</label>
+        <input v-model="age" @click="logAge" value="age"></input>
+        <span>{{age}}</span>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

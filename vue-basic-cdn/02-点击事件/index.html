@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue CDN</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>Events</h1>
+        <!-- <button v-on:click="age++">add a year</button> -->
+        <!-- <button @click="age--">subtract a year</button> -->
+        <button @click.once="add(10)">add a year</button>
+        <button @click="subtract(10)">subtract a year</button>
+        <p>我的年龄是:{{age}}</p>
+
+        <!-- mousemove event -->
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{X}} , {{Y}}
+        </div>
+
+        <!-- 事件修饰符 -->
+        <p><a @click.prevent="handleClick" href="https://www.baidu.com" target="_blank">触发事件，阻止默认事件</a></p>
+        <p><a @click.right="handleClick" href="https://www.baidu.com" target="_blank">鼠标右键触发事件</a></p>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
