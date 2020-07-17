@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.js"></script>
+    <title>元数据及路由匹配</title>
+</head>
+
+<body>
+    <div id="vue-app">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/login">登陆</router-link>
+            <router-link to="/post">帖子管理</router-link>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+
+</html>

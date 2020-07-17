@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>命名视图</title>
+</head>
+
+<body>
+    <div id="vue-app">
+        <div>
+            <router-link to="/">首页</router-link>
+            <router-link to="/user">用户管理</router-link>
+            <router-link to="/post">帖子管理</router-link>
+        </div>
+        <div>
+            <router-view name="index"></router-view>
+            <router-view name="sidebar"></router-view>
+            <router-view name="content"></router-view>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+<script src="https://cdn.bootcss.com/vue-router/2.7.0/vue-router.js"></script>
+<script src="./app.js"></script>
+
+</html>
